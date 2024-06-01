@@ -1,0 +1,47 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  padding: 1.5rem 5rem;
+  color: $color-primary-light;
+  &__child {
+    &--2 {
+      display: flex;
+      gap: 3rem;
+    }
+
+    &__link {
+      list-style-type: none;
+      position: relative;
+
+      &--animate {
+        &::after {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          bottom: -1rem;
+          left: 0;
+          opacity: 0;
+          width: 0;
+          height: 2.1px;
+          background-color: $color-primary-light;
+          transition: all 0.4s;
+        }
+
+        &:hover {
+          font-weight: 600;
+
+          &::after {
+            opacity: 1;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.logo {
+  height: 5rem;
+}

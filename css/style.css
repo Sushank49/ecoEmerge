@@ -1,0 +1,108 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-15rem); }
+  80% {
+    transform: translateX(2rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0rem); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(15rem); }
+  80% {
+    transform: translateX(-2rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0rem); } }
+
+*::after,
+*::before,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  overflow-x: hidden !important; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Open Sans", sans-serif; }
+
+.text-area {
+  text-align: center; }
+
+.nav {
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem; }
+  .nav__links:link, .nav__links:visited {
+    color: #82e0aa;
+    text-decoration: none;
+    transition: all 0.3s; }
+
+.heading-primary {
+  font-size: 7.2rem;
+  letter-spacing: 1rem;
+  color: #abebc6; }
+  .heading-primary--main {
+    display: block;
+    letter-spacing: 5rem;
+    font-weight: 300;
+    animation: moveInLeft 0.6s forwards ease-out;
+    backface-visibility: hidden; }
+  .heading-primary--sub {
+    margin-top: 4rem;
+    display: block;
+    letter-spacing: 1.2rem;
+    font-weight: 500;
+    padding-right: 3rem;
+    animation: moveInRight 0.6s forwards ease-out;
+    font-size: 3rem; }
+
+.margin-top-large {
+  margin-top: 10rem; }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  padding: 1.5rem 5rem;
+  color: #82e0aa; }
+  .nav__child--2 {
+    display: flex;
+    gap: 3rem; }
+  .nav__child__link {
+    list-style-type: none;
+    position: relative; }
+    .nav__child__link--animate::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      bottom: -1rem;
+      left: 0;
+      opacity: 0;
+      width: 0;
+      height: 2.1px;
+      background-color: #82e0aa;
+      transition: all 0.4s; }
+    .nav__child__link--animate:hover {
+      font-weight: 600; }
+      .nav__child__link--animate:hover::after {
+        opacity: 1;
+        width: 100%; }
+
+.logo {
+  height: 5rem; }
+
+.header {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../images/hero.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat; }

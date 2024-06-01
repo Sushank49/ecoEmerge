@@ -1,0 +1,13 @@
+.header {
+  background-image: linear-gradient(
+      to bottom,
+      rgba($color-black, 0.8),
+      rgba($color-black, 0.8)
+    ),
+    url("../../images/hero.jpg");
+
+  height: 100vh;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
