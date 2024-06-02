@@ -18,8 +18,7 @@
       transition: all 0.3s;
     }
 
-    &:hover,
-    &:focus {
+    &:hover {
       background-color: #ffa33a;
       color: $color-white;
       transform: translateY(-0.5rem);
