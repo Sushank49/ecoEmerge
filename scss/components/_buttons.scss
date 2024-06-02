@@ -1,0 +1,28 @@
+.btn-component {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  &__cta {
+    transition: all 0.3s;
+    &:link,
+    &:visited {
+      color: #ffc078;
+      text-decoration: none;
+      font-size: 2rem;
+      border: #ffa33a 2px solid;
+      padding: 2rem 5rem;
+      border-radius: 5rem;
+      animation: moveInBtm 0.6s forwards ease-out;
+      transition: all 0.3s;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: #ffa33a;
+      color: $color-white;
+      transform: translateY(-0.5rem);
+    }
+  }
+}
