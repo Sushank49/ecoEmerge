@@ -1,0 +1,24 @@
+.card-component {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 5rem;
+  text-align: center;
+
+  &__cards {
+    width: 25rem;
+    background-color: $color-white;
+    height: 30rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    padding: 2rem 1rem;
+  }
+
+  &__icon {
+    display: block;
+    text-align: center;
+    font-size: 7rem;
+    color: $color-primary-dark;
+    font-weight: 300;
+  }
+}

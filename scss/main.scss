@@ -7,9 +7,9 @@
 @import "base/utilities";
 
 @import "components/buttons";
+@import "components/cards";
 
 @import "layout/nav.scss";
 
-@import "pages/header.scss";
-
-
+@import "pages/header";
+@import "pages/section-how";

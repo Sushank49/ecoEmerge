@@ -4,11 +4,12 @@
   align-items: center;
   justify-items: center;
   padding: 1.5rem 5rem;
-  color: $color-primary-light;
   &__child {
     &--2 {
       display: flex;
       gap: 3rem;
+      align-items: center;
+      justify-content: center;
     }
 
     &__link {

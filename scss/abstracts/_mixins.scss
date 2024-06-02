@@ -1,0 +1,11 @@
+@mixin cta-btn($font-size, $paddingX, $paddingY) {
+  color: #ffa33a;
+  text-decoration: none;
+  font-size: $font-size;
+  display: inline-block !important;
+  border: #ffa33a 2px solid;
+  padding: $paddingX $paddingY;
+  border-radius: 5rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
