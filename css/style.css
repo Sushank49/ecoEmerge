@@ -133,16 +133,17 @@ link:visited {
 
 .heading-tertiary {
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 500;
   color: #333;
   line-height: 2.2rem;
-  letter-spacing: .2rem; }
+  letter-spacing: 0.2rem; }
 
 .card-component__para {
   font-size: 1.6rem;
-  color: #777;
+  color: #333;
   text-align: justify;
-  padding: .5rem 1rem; }
+  padding: 0.5rem 1rem;
+  margin-top: 1.5rem; }
 
 .margin-top-large {
   margin-top: 14rem; }
@@ -154,13 +155,13 @@ link:visited {
   margin-top: 3rem; }
 
 .padding-top-large {
-  margin-top: 14rem; }
+  padding-top: 10.5rem; }
 
 .padding-top-mid {
-  margin-top: 8rem; }
+  padding-top: 8rem; }
 
 .padding-top-small {
-  margin-top: 3rem; }
+  padding-top: 3rem; }
 
 .btn-component__cta:link, .btn-component__cta:visited {
   color: #ffa33a;
@@ -216,25 +217,60 @@ link:visited {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  justify-items: center;
+  height: 55rem;
   gap: 5rem;
-  text-align: center; }
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/section-key.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  border-radius: 1rem; }
   .card-component__cards {
     width: 25rem;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9);
     height: 30rem;
     border-radius: 0.5rem;
     box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.1);
     padding: 2rem 1rem;
-    transition: all .3s; }
+    transition: all 0.3s; }
     .card-component__cards:hover {
       transform: translateY(-1rem);
-      box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2); }
+      box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+      cursor: default; }
   .card-component__icon {
     display: block;
     text-align: center;
     font-size: 7rem;
     color: #28b485;
     font-weight: 300; }
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem; }
+  .testimonials__text {
+    display: grid;
+    width: 55%;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 8rem;
+    row-gap: 4.8rem;
+    column-gap: 8rem; }
+  .testimonials__images {
+    width: 45%; }
+
+.review__img {
+  border-radius: 100%;
+  height: 6.5rem; }
+
+.review__text {
+  color: #555;
+  font-size: 1.6rem;
+  padding-top: 1.2rem;
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem; }
 
 .nav {
   display: flex;
@@ -278,6 +314,11 @@ link:visited {
   background-repeat: no-repeat; }
 
 .section-how {
-  height: 100vh;
   background-color: #eee;
-  overflow: hidden; }
+  padding: 1rem 2rem 3rem 2rem;
+  padding-bottom: 14rem; }
+
+.section-articles {
+  height: 80rem;
+  background-color: #eee;
+  border-top: 1px solid #777; }

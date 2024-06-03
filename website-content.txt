@@ -29,22 +29,3 @@ Follow EcoEmerge on social media for the latest updates, news, and sustainabilit
 EcoEmerge - Empowering Sustainable Living for a Brighter Future.
 
 
-Key Features Section
-1. Sustainable Living Tips
-Icon/Illustration: A leaf or a recycle symbol.
-Description: "Discover practical tips and tricks to make your daily life more eco-friendly. From reducing waste to conserving energy, our guides help you take simple steps towards sustainability."
-2. Dynamic Filtering System
-Icon/Illustration: A filter or search symbol.
-Description: "Easily find articles and resources that match your interests. Use our dynamic filtering system to explore content by categories such as Home, Travel, and more."
-3. Resource Library
-Icon/Illustration: A book or library symbol.
-Description: "Access a comprehensive collection of resources including websites, apps, tools, and printable guides that support sustainable living practices."
-4. Latest Environmental News
-Icon/Illustration: A news or newspaper symbol.
-Description: "Stay informed with the latest news and updates on environmental issues and sustainability trends from around the world."
-5. Community Engagement
-Icon/Illustration: A group of people or a handshake symbol.
-Description: "Join a community of like-minded individuals. Participate in local events, volunteer opportunities, and initiatives that promote environmental stewardship."
-6. Contact and Support
-Icon/Illustration: An envelope or chat symbol.
-Description: "Have questions or want to get involved? Reach out to us through our contact page for inquiries, feedback, or collaboration opportunities."  

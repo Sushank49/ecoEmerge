@@ -2,21 +2,33 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  justify-items: center;
+  height: 55rem;
   gap: 5rem;
   text-align: center;
+  background-image: linear-gradient(
+      rgba($color-black, 0.2),
+      rgba($color-black, 0.2)
+    ),
+    url("../images/section-key.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  border-radius: 1rem;
 
   &__cards {
     width: 25rem;
-    background-color: $color-white;
+    background-color: rgba($color-white, 0.9);
     height: 30rem;
     border-radius: 0.5rem;
     box-shadow: 0 1.5rem 2.5rem rgba($color-black, 0.1);
     padding: 2rem 1rem;
-    transition: all .3s;
+    transition: all 0.3s;
 
     &:hover {
       transform: translateY(-1rem);
-      box-shadow: 0 1.5rem 3rem rgba($color-black, 0.2  );
+      box-shadow: 0 1.5rem 3rem rgba($color-black, 0.2);
+      cursor: default;
     }
   }
 
