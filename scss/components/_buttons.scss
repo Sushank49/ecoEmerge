@@ -36,3 +36,18 @@
     box-shadow: 0 1rem 1rem rgba($color-black, 1);
   }
 }
+#animate {
+  width: fit-content;
+  margin: 6rem auto 0 auto;
+  transition: all .3s;
+  &:hover {
+  
+    transform: translateY(-1rem);
+  }
+
+  &:active {
+    transform: translateY(-.5rem);
+  }
+
+}
+

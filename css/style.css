@@ -135,7 +135,14 @@ link:visited {
   font-size: 2rem;
   font-weight: 400;
   color: #333;
-  line-height: 2rem; }
+  line-height: 2.2rem;
+  letter-spacing: .2rem; }
+
+.card-component__para {
+  font-size: 1.6rem;
+  color: #777;
+  text-align: justify;
+  padding: .5rem 1rem; }
 
 .margin-top-large {
   margin-top: 14rem; }
@@ -196,6 +203,15 @@ link:visited {
   font-weight: 600;
   box-shadow: 0 1rem 1rem black; }
 
+#animate {
+  width: fit-content;
+  margin: 6rem auto 0 auto;
+  transition: all .3s; }
+  #animate:hover {
+    transform: translateY(-1rem); }
+  #animate:active {
+    transform: translateY(-0.5rem); }
+
 .card-component {
   display: flex;
   align-items: center;
@@ -207,8 +223,12 @@ link:visited {
     background-color: #fff;
     height: 30rem;
     border-radius: 0.5rem;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-    padding: 2rem 1rem; }
+    box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.1);
+    padding: 2rem 1rem;
+    transition: all .3s; }
+    .card-component__cards:hover {
+      transform: translateY(-1rem);
+      box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2); }
   .card-component__icon {
     display: block;
     text-align: center;
