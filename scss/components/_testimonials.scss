@@ -4,6 +4,7 @@
   align-items: center;
   // padding: 2rem;
   gap: 10rem;
+  transition: all 2s;
 
   &__text {
     display: grid;
@@ -30,12 +31,18 @@
   }
 
   &__text {
-    color: #555;
+    color: $color-grey-dark-4;
     font-size: 1.6rem;
     padding-top: 1.2rem;
     font-size: 1.8rem;
     line-height: 1.8;
     margin-bottom: 1.6rem;
+  }
+
+  &__author {
+    margin-top: 1rem;
+    color: $color-grey-dark-3;
+    font-size: 1.4rem;
   }
 }
 
@@ -46,12 +53,11 @@
   &__img {
     width: 25rem;
     height: 25rem;
-    object-fit: cover ;
-    
-    transition: all .3s;
+    object-fit: cover;
+
+    transition: all 0.3s;
   }
   &:hover &__img {
     transform: scale(1.1);
-
   }
 }

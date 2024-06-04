@@ -45,6 +45,51 @@
 @keyframes scroll {
   0% { } }
 
+.hideY {
+  transform: translateY(30%);
+  opacity: 0.2; }
+
+.hideX {
+  opacity: 0;
+  transform: translateX(-100%);
+  filter: blur(10px); }
+
+.showX {
+  transform: translateX(0%);
+  opacity: 1;
+  transition: all 0.5s !important; }
+
+.showY .card-component {
+  transform: translateY(0%);
+  opacity: 1; }
+
+.showX:nth-child(1) {
+  transition-delay: 0.2s !important; }
+
+.showX:nth-child(2) {
+  transition-delay: 0.4s !important; }
+
+.showX:nth-child(3) {
+  transition-delay: 0.6s !important; }
+
+.showX:nth-child(4) {
+  transition-delay: 0.8s !important; }
+
+.hideX1 {
+  transform: translateX(-80%);
+  opacity: 0; }
+  .hideX1:nth-child(2) {
+    transform: translateX(80%); }
+
+.showX1 {
+  transition: all 1s 1s !important;
+  transform: translateX(0);
+  opacity: 1; }
+  .showX1:nth-child(2) {
+    transition: all 1s 1s !important;
+    transition-delay: 0.4s;
+    transform: translateX(0); }
+
 *::after,
 *::before,
 * {
@@ -209,8 +254,8 @@ link:visited {
 
 #animate {
   width: fit-content;
-  margin: 6rem auto 0 auto;
-  transition: all .3s; }
+  margin: 10rem auto 0 auto;
+  transition: all 0.3s; }
   #animate:hover {
     transform: translateY(-1rem); }
   #animate:active {
@@ -220,15 +265,14 @@ link:visited {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  justify-items: center;
   height: 55rem;
   gap: 5rem;
   text-align: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/section-key.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
-  border-radius: 1rem; }
+  border-radius: 1rem;
+  transition: all 2s; }
   .card-component__cards {
     width: 25rem;
     background-color: rgba(255, 255, 255, 0.9);
@@ -252,7 +296,8 @@ link:visited {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10rem; }
+  gap: 10rem;
+  transition: all 2s; }
   .testimonials__text {
     display: grid;
     width: 55%;
@@ -279,6 +324,11 @@ link:visited {
   line-height: 1.8;
   margin-bottom: 1.6rem; }
 
+.review__author {
+  margin-top: 1rem;
+  color: #333;
+  font-size: 1.4rem; }
+
 .image-container {
   overflow: hidden;
   width: 25rem;
@@ -287,7 +337,7 @@ link:visited {
     width: 25rem;
     height: 25rem;
     object-fit: cover;
-    transition: all .3s; }
+    transition: all 0.3s; }
   .image-container:hover .image-container__img {
     transform: scale(1.1); }
 
@@ -337,7 +387,7 @@ link:visited {
   padding: 1rem 2rem 3rem 2rem;
   padding-bottom: 14rem; }
 
-.section-articles {
+.section-testimonials {
   height: 150rem;
   background-color: #eee;
   border-top: 1px solid #777; }

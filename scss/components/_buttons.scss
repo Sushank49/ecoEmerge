@@ -38,16 +38,13 @@
 }
 #animate {
   width: fit-content;
-  margin: 6rem auto 0 auto;
-  transition: all .3s;
+  margin: 10rem auto 0 auto;
+  transition: all 0.3s;
   &:hover {
-  
     transform: translateY(-1rem);
   }
 
   &:active {
-    transform: translateY(-.5rem);
+    transform: translateY(-0.5rem);
   }
-
 }
-
