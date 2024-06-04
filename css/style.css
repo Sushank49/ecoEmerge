@@ -224,7 +224,7 @@ link:visited {
   height: 55rem;
   gap: 5rem;
   text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/section-key.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/section-key.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -326,7 +326,7 @@ link:visited {
   height: 5rem; }
 
 .header {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/hero1.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/hero1.webp");
   height: 100vh;
   background-size: cover;
   background-position: top;
