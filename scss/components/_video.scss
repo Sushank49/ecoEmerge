@@ -1,0 +1,11 @@
+.video {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  object-fit: cover;
+  bottom: 0;
+  background-image: linear-gradient(
+    to left,
+    rgba($color-black, 0.8) rgba($color-black, 0.2)
+  );
+}

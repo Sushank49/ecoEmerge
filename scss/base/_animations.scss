@@ -119,11 +119,11 @@
 }
 
 .showX1 {
-  transition: all 1s 1s !important;
+  transition: all 1s !important;
   transform: translateX(0);
   opacity: 1;
   &:nth-child(2) {
-    transition: all 1s 1s !important;
+    transition: all 1s 0.5s !important;
     transition-delay: 0.4s;
     transform: translateX(0);
   }
