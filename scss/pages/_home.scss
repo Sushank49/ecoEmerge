@@ -1,15 +1,5 @@
 .header {
-  background-image: linear-gradient(
-      to bottom,
-      rgba($color-black, 0.8),
-      rgba($color-black, 0.8)
-    ),
-    url("../images/hero1.webp");
-
-  height: 100vh;
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
+  @include mainPage("../images/hero1.webp", 0.7);
 }
 
 .section-how {
@@ -19,14 +9,22 @@
 }
 
 .section-testimonials {
-  height: 150rem;
+  height: 160rem;
   background-color: $color-grey-light-2;
   border-top: 1px solid $color-grey-dark;
+  padding-bottom: 10rem;
 }
 
 .section-visions {
-  border-top: 1px solid $color-grey-dark;
-  background-color: $color-grey-light-2;
-  height: 100rem;
+  height: 133rem;
   position: relative;
+  padding-bottom: 4rem;
+}
+
+.header-about {
+  @include mainPage("../images/hero-alt.jpg", 0.6);
+}
+
+.section-story {
+  height: 90rem;
 }

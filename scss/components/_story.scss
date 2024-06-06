@@ -1,0 +1,28 @@
+.story {
+  display: flex;
+  height: 110rem;
+  padding: 5rem 8rem;
+  text-align: left;
+  border-radius: 5px;
+  gap: 16rem;
+  margin: 2rem;
+  background-color: $color-grey-dark-3;
+  position: relative;
+
+  &__text {
+    width: 45%;
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 700;
+    color: $color-grey-light-1;
+    letter-spacing: 0.15rem;
+  }
+
+  &__img {
+    position: sticky;
+    top: 12rem;
+    border-radius: 5rem;
+    width: 35rem;
+    object-fit: cover;
+  }
+}

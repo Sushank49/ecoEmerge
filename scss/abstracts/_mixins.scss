@@ -9,3 +9,17 @@
   font-weight: 400;
   letter-spacing: 0.1rem;
 }
+
+@mixin mainPage($bg-img, $darkness) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba($color-black, $darkness),
+      rgba($color-black, $darkness)
+    ),
+    url($bg-img);
+
+  height: 100vh;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}

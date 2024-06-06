@@ -1,0 +1,57 @@
+.vision {
+  display: block;
+  width: 100%;
+
+  &__box {
+    display: block;
+    margin: 5rem auto;
+    background-color: rgba($color-white, 0.8);
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    transform: skewX(-5deg);
+    align-items: center;
+    height: 25rem;
+    box-shadow: 0 4rem 10rem rgba($color-black, 0.15);
+    padding: 4rem 5rem;
+    gap: 2rem;
+    border-radius: 5px;
+  }
+
+  &__text {
+    transform: skewX(5deg);
+    width: 60%;
+    color: $color-grey-dark-3;
+    &--num {
+      font-size: 3.2rem;
+      font-weight: 600;
+    }
+
+    &--2 {
+      text-align: right;
+    }
+
+    &--content {
+      padding-top: 2rem;
+      font-size: 2.2rem;
+    }
+  }
+  &__img-container {
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+    transform: skewX(5deg);
+    border-radius: 1rem;
+  }
+
+  &__img-container:hover &__img {
+    transform: scale(1.1);
+  }
+
+  &__img {
+    transition: all 0.3s;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+}
