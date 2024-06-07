@@ -12,13 +12,14 @@ btnOpen.forEach((btn) =>
     subscribe.style.width = "100%";
     subscribe.style.height = "100vh";
     subscribe.classList.add("open");
-    console.log("btn clicked");
+    subscribe.style.visibility = "visible";
   })
 );
 
 closeForm.addEventListener("click", function () {
   subscribe.style.width = "0";
   subscribe.style.height = "0";
+  subscribe.style.visibility = "hidden";
   subscribe.classList.remove("open");
 });
 

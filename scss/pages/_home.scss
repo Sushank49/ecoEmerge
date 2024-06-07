@@ -24,6 +24,9 @@
 .header-about {
   @include mainPage("../images/hero-alt.jpg", 0.6);
 }
+.header-articles {
+  @include mainPage("../images/articles/hero.jpg", 0.6);
+}
 
 .section-story {
   height: 90rem;
