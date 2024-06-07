@@ -118,7 +118,7 @@
             <a href="#" class="nav__links">Contact Us</a>
           </li>
           <li class="nav__child__link">
-            <a href="#" class="nav__links btn-cta">Subscribe</a>
+            <a href="#" class="nav__links btn-cta btn-open">Subscribe</a>
           </li>
         </ul>
       </nav>
@@ -133,7 +133,7 @@
         </h1>
 
         <div id="animate" class="margin-top-mid">
-          <a href="#" class="btn-component__cta">Subscribe Now</a>
+          <a href="#" class="btn-component__cta btn-open">Subscribe Now</a>
         </div>
         <div class="review">
           <p class="review__stars margin-top-small">
@@ -328,7 +328,7 @@
         </div>
         <h2 class="heading-secondary padding-top-large">Mission and Vision</h2>
         <div class="vision padding-top-small">
-          <div class="vision__box">
+          <div class="vision__box hideX2">
             <div class="vision__text">
               <div class="vision__text--num">01</div>
               <p class="vision__text--content">
@@ -345,7 +345,7 @@
               />
             </div>
           </div>
-          <div class="vision__box margin-top-mid">
+          <div class="vision__box margin-top-mid hideX2">
             <div class="vision__img-container">
               <img
                 src="./images/mission/mission2.jpg"
@@ -362,7 +362,7 @@
               </p>
             </div>
           </div>
-          <div class="vision__box">
+          <div class="vision__box hideX2">
             <div class="vision__text">
               <div class="vision__text--num">03</div>
               <p class="vision__text--content">
@@ -381,27 +381,38 @@
           </div>
         </div>
         <div class="btn-mission-component">
-          <a href="#" class="btn-mission">Join Us</a>
+          <a href="#" class="btn-mission btn-open">Join Us</a>
         </div>
       </section>
     </main>
-    <footer class="footer"></footer>
 
     <div class="subscribe">
-      <form action="" class="subscribe__form">
-        <label>First Name:</label>
-        <input type="text" name="name" id="name" placeholder="John Smith" />
+      <form action="#" class="form">
+        <h4 class="form__heading">Join Now!</h4>
+        <span class="material-symbols-outlined form__close"> close </span>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Full name"
+          class="form__input"
+          required
+        />
+        <label class="form__label" for="name">Full name</label>
         <br />
-        <label>Your Email:</label>
         <input
           type="email"
           name="email"
           id="email"
-          placeholder="example@gmail.com"
+          placeholder="Your email"
+          class="form__input"
+          required
         />
+        <label class="form__label" for="email">Your email</label>
         <br />
         <button type="submit" class="subscribe__btn">Join Now!</button>
       </form>
     </div>
+    <footer class="footer"></footer>
   </body>
 </html>

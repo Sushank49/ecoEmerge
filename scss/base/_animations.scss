@@ -134,3 +134,26 @@
     transform: translateX(0);
   }
 }
+
+.hideX2 {
+  transform: translateX(-80%);
+  opacity: 0;
+
+  &:nth-child(1) {
+    transform: translateX(80%);
+  }
+
+  &:nth-child(2) {
+    transform: translateX(-80%);
+  }
+
+  &:nth-child(3) {
+    transform: translateX(80%);
+  }
+}
+
+.showX2 {
+  transition: all 1s !important;
+  transform: translateX(0);
+  opacity: 1;
+}
