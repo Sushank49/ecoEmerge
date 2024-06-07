@@ -13,8 +13,9 @@
 @import "components/vision";
 @import "components/story";
 
-@import "layout/nav.scss";
-@import "layout/subscribe.scss";
+@import "layout/nav";
+@import "layout/subscribe";
+@import "layout/footer";
 
 @import "pages/home";
 @import "pages/articles";

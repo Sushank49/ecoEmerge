@@ -492,7 +492,8 @@ link:visited {
   justify-content: space-between;
   align-items: center;
   justify-items: center;
-  padding: 1.5rem 5rem; }
+  padding: 1.5rem 5rem;
+  overflow: hidden; }
   .nav__child--2 {
     display: flex;
     gap: 3rem;
@@ -520,6 +521,13 @@ link:visited {
 
 .logo {
   height: 5rem; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000; }
 
 .subscribe {
   position: fixed;
@@ -609,6 +617,50 @@ link:visited {
 .open {
   opacity: 1;
   position: fixed; }
+
+.footer {
+  height: 55rem;
+  background-color: rgba(51, 51, 51, 0.9);
+  padding: 10rem 10rem;
+  color: #f7f7f7;
+  font-size: 1.6rem; }
+  .footer__logo-box {
+    display: block;
+    width: 100%;
+    text-align: center; }
+  .footer__logo-text {
+    color: #28b485;
+    font-size: 3.2rem; }
+  .footer__logo {
+    height: 15rem; }
+  .footer__content {
+    display: flex;
+    align-items: top;
+    margin-top: 8rem;
+    gap: 3rem;
+    justify-content: space-between; }
+  .footer__navigation {
+    display: inline-block;
+    border-top: 1px solid #eee;
+    padding-top: 3rem; }
+  .footer__list {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem; }
+  .footer__link {
+    padding: 1px 0.3rem;
+    transition: all 0.3s; }
+    .footer__link:hover {
+      transform: rotate(5deg) scale(1.2);
+      background-color: #333;
+      color: #55c57a; }
+  .footer__item:link, .footer__item:visited {
+    text-decoration: none;
+    color: inherit; }
+  .footer__copyright {
+    border-top: 1px solid #eee;
+    padding-top: 3rem;
+    width: 50%; }
 
 .header {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/hero1.webp");

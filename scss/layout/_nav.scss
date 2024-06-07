@@ -4,6 +4,8 @@
   align-items: center;
   justify-items: center;
   padding: 1.5rem 5rem;
+  overflow: hidden;
+
   &__child {
     &--2 {
       display: flex;
@@ -45,4 +47,13 @@
 
 .logo {
   height: 5rem;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba($color-black, 0.8);
+
+  z-index: 1000;
 }

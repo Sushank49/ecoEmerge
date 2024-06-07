@@ -6,7 +6,28 @@ const btnOpen = document.querySelectorAll(".btn-open");
 const subscribe = document.querySelector(".subscribe");
 const closeForm = document.querySelector(".form__close");
 const missions = document.querySelectorAll(".vision__box");
+const startSticky = document.querySelector(".start");
+const nav = document.querySelector(".nav");
+const main = document.querySelector(".main");
+console.log(nav);
 
+// Sticky Nav
+const stick = startSticky.offsetTop;
+window.onscroll = function () {
+  startStickyNav();
+};
+
+function startStickyNav() {
+  if (window.scrollY >= stick) {
+    nav.classList.add("sticky");
+    document.body.style.marginTop = "-10rem";
+  } else {
+    nav.classList.remove("sticky");
+    document.body.style.marginTop = "0";
+  }
+}
+
+// Form open and close
 btnOpen.forEach((btn) =>
   btn.addEventListener("click", function () {
     subscribe.style.width = "100%";
@@ -23,6 +44,7 @@ closeForm.addEventListener("click", function () {
   subscribe.classList.remove("open");
 });
 
+// For animations
 const observer = new IntersectionObserver(
   function (entries) {
     entries.forEach((entry) => {
