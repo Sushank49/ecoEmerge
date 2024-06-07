@@ -320,7 +320,7 @@
       </section>
       <section class="section-visions">
         <div class="video">
-          <video loop autoplay class="video__content">
+          <video loop autoplay muted class="video__content">
             <source src="images/bgvideo.mp4" type="video/mp4" />
             Your Browser does not support playing Video. Update it for a better
             experience.
@@ -387,6 +387,21 @@
     </main>
     <footer class="footer"></footer>
 
-    <div class="subscribe"></div>
+    <div class="subscribe">
+      <form action="" class="subscribe__form">
+        <label>First Name:</label>
+        <input type="text" name="name" id="name" placeholder="John Smith" />
+        <br />
+        <label>Your Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="example@gmail.com"
+        />
+        <br />
+        <button type="submit" class="subscribe__btn">Join Now!</button>
+      </form>
+    </div>
   </body>
 </html>

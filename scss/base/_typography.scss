@@ -109,7 +109,7 @@ link:visited {
   opacity: 0;
   transform: scale(0);
   animation: fade linear forwards;
-  animation-timeline: view(28rem 1.5rem);
+  animation-timeline: view(30rem 1.5rem);
 
   &:hover {
     text-shadow: 0rem 1rem 2rem rgba($color-black, 0.2);

@@ -1,0 +1,34 @@
+.subscribe {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  background-color: $color-white;
+  filter: blur(3px) brightness(-1rem);
+  padding: 30rem 0;
+
+  &__form {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    padding: 10rem;
+    padding: 3rem;
+    font-size: 3.2rem;
+    text-align: center;
+    background-color: orangered;
+    border-radius: 5px;
+  }
+
+  &__btn {
+    padding: 1rem 5rem;
+    border-radius: 10rem;
+    margin-top: 5rem;
+    font-size: 2.4rem;
+  }
+
+  input {
+    font-size: 2.4rem;
+    padding: 1rem 3rem;
+    border-radius: 3px;
+    margin-top: 2rem;
+  }
+}

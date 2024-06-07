@@ -187,7 +187,7 @@ link:visited {
   opacity: 0;
   transform: scale(0);
   animation: fade linear forwards;
-  animation-timeline: view(28rem 1.5rem); }
+  animation-timeline: view(30rem 1.5rem); }
   .heading-secondary:hover {
     text-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
@@ -444,23 +444,26 @@ link:visited {
   height: 110rem;
   padding: 5rem 8rem;
   text-align: left;
-  border-radius: 5px;
+  border-radius: .5rem;
   gap: 16rem;
   margin: 2rem;
   background-color: #333;
   position: relative; }
   .story__text {
-    width: 45%;
+    width: 100%;
     font-size: 2rem;
     line-height: 3rem;
     font-weight: 700;
     color: #f7f7f7;
-    letter-spacing: 0.15rem; }
+    text-align: justify;
+    letter-spacing: 0.15rem;
+    padding-bottom: 8rem; }
   .story__img {
     position: sticky;
     top: 12rem;
     border-radius: 5rem;
-    width: 35rem;
+    height: 55rem;
+    width: 45rem;
     object-fit: cover; }
 
 .nav {
@@ -496,6 +499,34 @@ link:visited {
 
 .logo {
   height: 5rem; }
+
+.subscribe {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  filter: blur(3px) brightness(-1rem);
+  padding: 30rem 0; }
+  .subscribe__form {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    padding: 10rem;
+    padding: 3rem;
+    font-size: 3.2rem;
+    text-align: center;
+    background-color: orangered;
+    border-radius: 5px; }
+  .subscribe__btn {
+    padding: 1rem 5rem;
+    border-radius: 10rem;
+    margin-top: 5rem;
+    font-size: 2.4rem; }
+  .subscribe input {
+    font-size: 2.4rem;
+    padding: 1rem 3rem;
+    border-radius: 3px;
+    margin-top: 2rem; }
 
 .header {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/hero1.webp");
