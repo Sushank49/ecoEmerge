@@ -18,7 +18,7 @@
     <script src="../js/about.js" defer></script>
   </head>
   <body>
-    <header class="header-about">
+    <main class="contact-main">
       <nav class="nav">
         <ul class="nav__child nav__child--1">
           <li class="nav__child__link">
@@ -29,67 +29,71 @@
         </ul>
         <ul class="nav__child nav__child--2">
           <li class="nav__child__link--animate nav__child__link">
-            <a href="#" class="nav__links">About Us</a>
+            <a href="./about.html" class="nav__links">About Us</a>
           </li>
           <li class="nav__child__link--animate nav__child__link">
             <a href="./articles.html" class="nav__links">Articles</a>
           </li>
           <li class="nav__child__link--animate nav__child__link">
-            <a href="./contact.html" class="nav__links">Contact Us</a>
+            <a href="#" class="nav__links">Contact Us</a>
           </li>
           <li class="nav__child__link">
             <a href="#" class="nav__links btn-cta btn-open">Subscribe</a>
           </li>
         </ul>
       </nav>
-
-      <div class="text-area margin-top-large">
-        <h1 class="heading-primary heading-primary__about">
-          <span class="heading-primary--main heading-primary--main--about"
-            >Nurturing change for a sustainable future.</span
-          >
-          <span class="heading-primary--sub"> Join our journey.</span>
+      <div class="contact">
+        <h1 class="contact__heading-primary">
+          Reach Out and Let's Make a Difference Together!
         </h1>
-      </div>
-      <div id="animate" class="margin-top-mid">
-        <a href="#" class="btn-component__cta btn-open">Join Now!</a>
-      </div>
-    </header>
-    <main class="start">
-      <section class="section-story">
-        <h2 class="heading-secondary padding-top-mid">Our Story</h2>
-        <div class="story">
-          <div>
-            <p class="story__text">
-              EcoEmerge began with a simple yet powerful idea: small,
-              sustainable actions can lead to significant change. Our founders,
-              a group of passionate environmentalists, envisioned a platform
-              where individuals could easily access practical, actionable
-              information on sustainable living.<br /><br />Inspired by the
-              growing need for environmental awareness, we embarked on a mission
-              to educate, empower, and engage people around the world. From the
-              very beginning, EcoEmerge has been dedicated to fostering a
-              community where sustainability isn't just a choice—it's a
-              lifestyle. <br /><br />Over the years, we have grown into a
-              vibrant community of eco-conscious individuals who believe in the
-              power of collective action. Our team curates the best tips,
-              resources, and stories to help you make informed, eco-friendly
-              choices every day. <br /><br />Join us as we continue to nurture
-              change, inspire positive action, and work towards a greener, more
-              sustainable future for all.
-            </p>
-            <div class="btn-mission-component" style="display: inline"></div>
-            <a href="#" class="btn-mission btn-open btn-about">Join Us</a>
-          </div>
-          <div class="image-wrapper">
-            <img
-              src="../images/story.jpg"
-              class="story__img"
-              alt="Picture of a natural landscape"
+        <div class="contact__box">
+          <h2 class="contact__heading-secondary">Contact Us!</h2>
+          <p class="contact__email"></p>
+          <form action="#" class="contact__form">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Full name"
+              class="form__input contact__input"
+              required
             />
-          </div>
+            <label class="form__label contact__label" for="name"
+              >Full name</label
+            >
+            <br />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your email"
+              class="form__input contact__input"
+              required
+            />
+            <label class="form__label contact__label" for="email"
+              >Your email</label
+            >
+            <br />
+            <textarea
+              type="text"
+              name="message"
+              size="10"
+              id="message"
+              placeholder="Your message"
+              class="form__input contact__input contact__input--message"
+              maxlength="50"
+              required
+            ></textarea>
+            <label class="form__label contact__label" for="message"
+              >Your message</label
+            >
+            <br />
+            <button type="submit" class="subscribe__btn">
+              Submit Now &rarr;
+            </button>
+          </form>
         </div>
-      </section>
+      </div>
     </main>
     <div class="subscribe">
       <form action="#" class="form">
@@ -118,7 +122,7 @@
         <button type="submit" class="subscribe__btn">Join Now!</button>
       </form>
     </div>
-    <footer class="footer">
+    <footer class="footer start">
       <div class="footer__logo-box">
         <img
           src="../images/logo.png"

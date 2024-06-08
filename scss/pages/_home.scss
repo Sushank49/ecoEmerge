@@ -29,5 +29,10 @@
 }
 
 .section-story {
-  height: 90rem;
+  height: 100%;
+  padding-bottom: 10rem;
+}
+
+.contact-main {
+  @include mainPage("../images/contact.jpg", 0.7);
 }

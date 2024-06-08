@@ -9,7 +9,6 @@ const missions = document.querySelectorAll(".vision__box");
 const startSticky = document.querySelector(".start");
 const nav = document.querySelector(".nav");
 const main = document.querySelector(".main");
-console.log(nav);
 
 // Sticky Nav
 const stick = startSticky.offsetTop;

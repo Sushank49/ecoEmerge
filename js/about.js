@@ -4,6 +4,24 @@ const btnOpen = document.querySelectorAll(".btn-open");
 const subscribe = document.querySelector(".subscribe");
 const closeForm = document.querySelector(".form__close");
 const articles = document.querySelectorAll(".article");
+const startSticky = document.querySelector(".start");
+const nav = document.querySelector(".nav");
+
+// Sticky Nav
+const stick = startSticky.offsetTop;
+window.onscroll = function () {
+  startStickyNav();
+};
+
+function startStickyNav() {
+  if (window.scrollY >= stick) {
+    nav.classList.add("sticky");
+    document.body.style.marginTop = "-10rem";
+  } else {
+    nav.classList.remove("sticky");
+    document.body.style.marginTop = "0";
+  }
+}
 
 const observer = new IntersectionObserver(
   function (entries) {
@@ -17,7 +35,7 @@ const observer = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.4,
+    threshold: 0.6,
   }
 );
 

@@ -662,6 +662,90 @@ link:visited {
     padding-top: 3rem;
     width: 50%; }
 
+.article-page {
+  padding: 10rem 5rem;
+  height: 100%;
+  background-color: #eee;
+  position: relative; }
+  .article-page__head {
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 5px; }
+  .article-page__heading {
+    font-size: 6.4rem;
+    line-height: 1.2;
+    font-weight: 600; }
+  .article-page__details {
+    padding: 3rem 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .article-page__author {
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+    font-weight: 600; }
+  .article-page__date {
+    padding: 0.5rem 0.5rem 1rem;
+    display: block; }
+  .article-page__share {
+    height: 2rem;
+    display: flex;
+    gap: 2rem; }
+  .article-page__icon {
+    transition: all 0.2s; }
+    .article-page__icon:hover {
+      cursor: pointer;
+      transform: scale(1.1); }
+  .article-page__content {
+    background-color: #fff; }
+  .article-page__img {
+    width: 100%;
+    height: 30rem;
+    display: inline; }
+  .article-page__text {
+    padding: 5rem 0 5rem 8rem;
+    font-size: 1.6rem;
+    line-height: 1.9; }
+  .article-page__img-content {
+    width: 100%;
+    height: 50rem;
+    object-fit: cover; }
+  .article-page__item {
+    display: flex;
+    align-items: top;
+    gap: 10rem; }
+
+.aside {
+  margin-top: 6rem;
+  width: 100%;
+  border-left: 1px solid #777;
+  padding: 1rem 2rem;
+  height: 31rem; }
+  .aside__heading {
+    font-size: 3.2rem;
+    color: #333; }
+  .aside__list {
+    font-size: 2rem;
+    margin: 2rem 3rem;
+    color: #333;
+    line-height: 3rem; }
+  .aside__item {
+    list-style-type: decimal; }
+  .aside__link:link, .aside__link:visited {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    text-decoration: none;
+    border: 1px solid #28b485;
+    border-radius: 1rem;
+    padding: 1rem 3rem;
+    color: #333;
+    transition: all 0.3s;
+    font-weight: 500; }
+  .aside__link:hover {
+    background-color: #28b485;
+    color: #fff; }
+
 .header {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/hero1.webp");
   height: 100vh;
@@ -700,10 +784,18 @@ link:visited {
   background-repeat: no-repeat; }
 
 .section-story {
-  height: 90rem; }
+  height: 100%;
+  padding-bottom: 10rem; }
+
+.contact-main {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/contact.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat; }
 
 .main-article {
-  background-color: #ebfbee;
+  background-color: #eee;
   height: 100%; }
 
 .article-grid {
@@ -740,7 +832,8 @@ link:visited {
     font-size: 1.6rem; }
   .article:hover {
     box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
-    cursor: pointer; }
+    cursor: pointer;
+    translate: 0 -0.5rem; }
 
 .text-box {
   padding: 2rem 1.5rem;
@@ -765,3 +858,39 @@ link:visited {
 
 .show {
   opacity: 1; }
+
+.contact {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  gap: 5rem;
+  justify-content: center;
+  padding: 4rem 8rem 10rem; }
+  .contact__heading-primary {
+    font-size: 4.6rem;
+    color: #7ed56f;
+    padding-top: 10rem;
+    width: 60%;
+    animation: moveInLeft 0.7s forwards ease-out; }
+  .contact__heading-secondary {
+    font-size: 3.2rem;
+    padding-top: 1rem;
+    color: #55c57a; }
+  .contact__box {
+    background-color: rgba(255, 255, 255, 0.9);
+    animation: fade 1s forwards;
+    height: 50rem;
+    width: 60rem;
+    text-align: center;
+    border-radius: 5px; }
+  .contact__form {
+    text-align: center;
+    padding-top: 5rem; }
+  .contact__input {
+    margin: 0 auto;
+    width: 70%; }
+    .contact__input--message {
+      padding: 3rem;
+      height: 10rem; }
+  .contact__label {
+    translate: -13rem 0; }

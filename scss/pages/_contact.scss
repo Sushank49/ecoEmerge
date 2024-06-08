@@ -1,0 +1,48 @@
+.contact {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  gap: 5rem;
+  justify-content: center;
+  padding: 4rem 8rem 10rem;
+
+  &__heading-primary {
+    font-size: 4.6rem;
+    color: $color-primary-light;
+    padding-top: 10rem;
+    width: 60%;
+    animation: moveInLeft 0.7s forwards ease-out;
+  }
+  &__heading-secondary {
+    font-size: 3.2rem;
+    padding-top: 1rem;
+    color: $color-primary;
+  }
+
+  &__box {
+    background-color: rgba($color-white, 0.9);
+    animation: fade 1s forwards;
+    height: 50rem;
+    width: 60rem;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  &__form {
+    text-align: center;
+    padding-top: 5rem;
+  }
+
+  &__input {
+    margin: 0 auto;
+    width: 70%;
+    &--message {
+      padding: 3rem;
+      height: 10rem;
+    }
+  }
+
+  &__label {
+    translate: -13rem 0;
+  }
+}

@@ -1,5 +1,5 @@
 .main-article {
-  background-color: #ebfbee;
+  background-color: $color-grey-light-2;
   height: 100%;
 }
 
@@ -50,6 +50,7 @@
   &:hover {
     box-shadow: 0 2rem 3rem rgba($color-black, 0.2);
     cursor: pointer;
+    translate: 0 -0.5rem;
   }
 }
 
