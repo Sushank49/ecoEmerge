@@ -1,0 +1,16 @@
+.add {
+  height: 100vh;
+  transition: all .3s;
+  width: 100%;
+  background-color: orangered;
+ &__input {
+  height: 20rem;
+ }
+
+}
+
+.hidden {
+  visibility: 'hidden';
+  transform: translateX(-100%);
+  opacity: 0;
+}

@@ -1,7 +1,7 @@
 "use strict";
 
-const text = "";
-
+const addBtn = document.querySelector('.aside__link')
+const add = document.querySelector('.add')
 const articleData = [
   {
     id: 1,
@@ -36,6 +36,10 @@ In conclusion, reducing your carbon footprint is not only beneficial for the pla
     author: "-John Antwerp",
   },
 ];
+
+// addBtn?.addEventListener('click', function(){
+//   add.classList.remove('hidden')
+// })
 
 const article = document.querySelectorAll(".article");
 
