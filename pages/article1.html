@@ -35,22 +35,15 @@
       sizes="76x76"
       href="../images/favicon/apple-icon-76x76.png"
     />
-
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="../images/favicon/apple-icon-114x114.png"
+    />
     <link
       rel="apple-touch-icon"
       sizes="120x120"
       href="../images/favicon/apple-icon-120x120.png"
-    />
-
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="../images/favicon/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="../images/favicon/apple-icon-180x180.png"
     />
 
     <link
@@ -73,7 +66,10 @@
     />
     <link rel="manifest" href="../images/favicon/manifest.json" />
     <meta name="msapplication-TileColor" content="#ffffff" />
-
+    <meta
+      name="msapplication-TileImage"
+      content="../images/favicon/ms-icon-144x144.png"
+    />
     <meta
       name="description"
       content="EcoEmerge is a digital platform dedicated to fostering environmental awareness and promoting sustainable living practices. Our mission is to empower individuals to make eco-conscious choices in their daily lives, contributing to a healthier planet for current and future generations."
@@ -81,52 +77,35 @@
     <meta name="theme-color" content="#ffffff" />
     <script defer src="../js/about.js"></script>
     <script defer src="../js/articles.js"></script>
+    <script defer src="../js/show-article.js"></script>
   </head>
   <body>
-    <header class="header-articles">
-      <nav class="nav">
-        <ul class="nav__child nav__child--1">
-          <li class="nav__child__link">
-            <a href="../index.html" class="nav__logo" Emerge
-              ><span class="nav__logo--underline">Eco</span>Emerge</a
-            >
-          </li>
-        </ul>
-        <ul class="nav__child nav__child--2">
-          <li class="nav__child__link--animate nav__child__link">
-            <a href="./about.html" class="nav__links">About Us</a>
-          </li>
-          <li class="nav__child__link--animate nav__child__link">
-            <a href="#" class="nav__links">Articles</a>
-          </li>
-          <li class="nav__child__link--animate nav__child__link">
-            <a href="./contact.html" class="nav__links">Contact Us</a>
-          </li>
-          <li class="nav__child__link">
-            <a href="#" class="nav__links btn-cta btn-open">Subscribe</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="text-area margin-top-large">
-        <h1 class="heading-primary heading-primary__about">
-          <span class="heading-primary--main heading-primary--main--articles"
-            >Unveiling Sustainable Insights.</span
+    <nav class="nav">
+      <ul class="nav__child nav__child--1">
+        <li class="nav__child__link">
+          <a href="../index.html" class="nav__logo" Emerge
+            ><span class="nav__logo--underline">Eco</span>Emerge</a
           >
-          <span class="heading-primary--sub">Dive into Our Stories.</span>
-        </h1>
-      </div>
-      <div id="animate" class="margin-top-mid">
-        <a href="#article" class="btn-component__cta">Start Reading</a>
-      </div>
-    </header>
-    <main class="main-article start" id="article">
-      <h2 class="heading-secondary padding-top-mid">
-        <strong>Eco</strong>Emerge Chronicles
-      </h2>
-      <div class="article-grid">
-        <span class="trending">Trending Articles</span>
-      </div>
-    </main>
+        </li>
+      </ul>
+      <ul class="nav__child nav__child--2">
+        <li class="nav__child__link--animate nav__child__link">
+          <a href="./about.html" class="nav__links">About Us</a>
+        </li>
+        <li class="nav__child__link--animate nav__child__link">
+          <a href="./articles.html" class="nav__links">Articles</a>
+        </li>
+        <li class="nav__child__link--animate nav__child__link">
+          <a href="./contact.html" class="nav__links">Contact Us</a>
+        </li>
+        <li class="nav__child__link">
+          <a href="#" class="nav__links btn-cta btn-open">Subscribe</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="article-page"></main>
+
     <div class="subscribe">
       <form action="#" class="form">
         <h4 class="form__heading">Join Now!</h4>
@@ -153,6 +132,68 @@
         <br />
         <button type="submit" class="subscribe__btn">Join Now!</button>
       </form>
+    </div>
+    <div class="add hidden">
+      <div class="add__form">
+        <span class="material-symbols-outlined form__close close-add">
+          close
+        </span>
+        <h2 class="heading-secondary">Add Your Article Now!</h2>
+        <div class="contact__form" style="margin-top: -2rem">
+          <input
+            type="text"
+            name="title"
+            id="title"
+            placeholder="Title"
+            class="form__input contact__input add__input--1"
+            required
+          />
+          <label class="form__label add__label" for="name">Title</label>
+          <br />
+          <input
+            type="text`"
+            name="image"
+            id="image"
+            placeholder="Link of the image"
+            class="form__input contact__input add__input--1"
+            required
+          />
+          <label class="form__label add__label" for="image"
+            >Link of the image</label
+          >
+          <br />
+          <input
+            type="text`"
+            name="author"
+            id="author"
+            placeholder="Your name"
+            class="form__input contact__input add__input--1"
+            required
+          />
+          <label class="form__label add__label" for="image">Your name</label>
+          <br />
+          <textarea
+            minlength="150"
+            cols="10"
+            name="article"
+            id="article"
+            placeholder="Content of the article"
+            class="form__input contact__input add__input--1 add__input"
+            required
+          ></textarea>
+          <label class="form__label add__label" for="article"
+            >Content of the article</label
+          >
+          <br />
+          <button
+            type="submit"
+            class="subscribe__btn submit"
+            style="margin-top: 0"
+          >
+            Submit Now &rarr;
+          </button>
+        </div>
+      </div>
     </div>
     <footer class="footer">
       <div class="footer__logo-box">

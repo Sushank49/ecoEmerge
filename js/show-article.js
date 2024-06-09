@@ -1,142 +1,21 @@
 "use strict";
+storedData = localStorage.getItem("articles");
+articleNum = localStorage.getItem("articleNum");
+articleData = JSON.parse(storedData);
+articleNum = JSON.parse(articleNum);
+console.log(articleNum);
 
-let articleData = [
-  {
-    id: 1,
-    title: "10 Easy Steps to Reduce Your Carbon Footprint Today🌲",
-    content: `
-As our understanding of climate change grows, so does the urgency to reduce our carbon footprint. The good news is that making a positive impact doesn't require drastic changes. Here are ten simple steps you can take today to reduce your carbon footprint and contribute to a healthier planet.
-
-Switching to energy-efficient light bulbs is a straightforward and effective way to start. LED and CFL bulbs use significantly less energy and have a longer lifespan compared to traditional incandescent bulbs. This not only reduces your electricity bill but also lowers the amount of carbon dioxide emissions from power plants.
-
-Another simple habit to adopt is unplugging unused electronics. Many devices continue to consume energy even when they are turned off but remain plugged in. By unplugging them, you can save a considerable amount of energy over time, contributing to a reduction in overall energy consumption and carbon emissions.
-
-Opting for public transportation, biking, or walking instead of driving a car can make a significant difference. These alternatives reduce the number of vehicles on the road, which in turn lowers greenhouse gas emissions and decreases traffic congestion. If these options are not feasible, carpooling with friends or colleagues can also help reduce your carbon footprint.
-
-Practicing the three R's – reduce, reuse, and recycle – is another powerful way to minimize your environmental impact. By reducing waste, reusing items whenever possible, and recycling materials, you can help decrease the volume of trash that ends up in landfills, thereby reducing methane emissions and conserving natural resources.
-
-Conserving water is crucial, and it can be achieved through simple actions like taking shorter showers, fixing leaks, and using water-efficient appliances. These measures not only save water but also reduce the energy required to heat and pump it, leading to a lower carbon footprint.
-
-Incorporating more plant-based meals into your diet can significantly impact your carbon footprint. Animal agriculture is a major contributor to greenhouse gas emissions, and by choosing plant-based foods, you can help mitigate this effect. Even small changes, such as participating in "Meatless Mondays," can make a difference.
-
-Supporting renewable energy is another effective strategy. If your utility provider offers a green energy plan, consider switching to it. Alternatively, installing solar panels on your home can reduce your reliance on fossil fuels and lower your carbon emissions.
-
-Sustainable shopping practices also play a vital role in reducing your carbon footprint. By buying locally-produced and sustainably-sourced products, you support local economies and reduce the carbon emissions associated with long-distance transportation of goods. Additionally, choosing products with minimal packaging can help reduce waste.
-
-Using a programmable thermostat is a smart way to optimize your home’s energy use. These thermostats allow you to set heating and cooling schedules that align with your daily routine, ensuring that energy is not wasted when you are not at home. This efficient temperature control can lead to significant energy savings and reduced carbon emissions.
-
-Lastly, spreading awareness about the importance of reducing carbon footprints can amplify your impact. Educating others and encouraging sustainable practices within your community fosters a collective effort towards a greener future. Sharing tips and success stories can inspire others to take action and adopt environmentally friendly habits.
-
-In conclusion, reducing your carbon footprint is not only beneficial for the planet but can also lead to cost savings and a healthier lifestyle. Start with these simple steps today and contribute to a more sustainable future for everyone. Small actions, when multiplied by millions, can transform the world.
-`,
-
-    date: "July 12, 2024",
-    author: "John Antwerp",
-    img: "../images/articles/article1.jpg",
-  },
-];
-
-let storedData = localStorage.getItem("articles");
-if (storedData !== null) {
-  articleData = JSON.parse(storedData);
-}
-// All the inputs required
-const addBtn = document.querySelector(".aside__link");
-const add = document.querySelector(".add");
-const title = document.querySelector("#title");
-const submit = document.querySelector(".submit");
-const content = document.querySelector("#article");
-const img = document.querySelector("#image");
-const author = document.querySelector("#author");
-const articleContainer = document.querySelector(".article-grid");
-const articlePage = document.querySelector(".article-page");
-
-// Read the form filled out by the user and add it to the array
-let added = false;
-submit?.addEventListener("click", function (e) {
-  const today = new Date();
-  const options = { year: "numeric", month: "long", day: "numeric" };
-  const formattedDate = today.toLocaleDateString("en-US", options);
-  added = true;
-  e.preventDefault();
-  const newArticle = {
-    id: articleData.length + 1,
-    title: title.value,
-    content: content.value,
-    date: formattedDate,
-    author: author.value,
-    img: img.value,
-  };
-  articleData = [...articleData, newArticle];
-  localStorage.setItem("articles", JSON.stringify(articleData));
-});
-
-if (added) {
-  let storedData = localStorage.getItem("articles");
-  articleData = JSON.parse(storedData);
-  console.log(articleData);
-  added = false;
-}
-
-// addBtn?.addEventListener('click', function(){
-//   add.classList.remove('hidden')
-// })
-
-// Display the correct number of articles in the page
-
-articleData.forEach((article) => {
-  const articleElement = document.createElement("article");
-  articleElement.className = "article";
-  articleElement.setAttribute("data-url", "./article1.html");
-  articleElement.setAttribute("num", article.id);
-
-  // Set the inner HTML of the article
-  articleElement.innerHTML = `
-  <div class="img-box">
-  <img
-  src='${article.img}'
-  alt='${article.title}'
-  class="article__img"
-  />
-  </div>
-  <div class="text-box">
-  <p class="article__date">${article.date}</p>
-  <h3 class="article__heading">${article.title}</h3>
-  <p class="article__author">-${article.author}</p>
-  <p class="article__preview">${article.content.slice(0, 289)}...</p>
-    </div>
-    `;
-
-  // Append the article to the content div
-  articleContainer?.appendChild(articleElement);
-});
-
-// Directing user to the original article instead of a 'preview' version
-const article = document.querySelectorAll(".article");
-
-let articleNum;
-article?.forEach((el) => {
-  el.addEventListener("click", function () {
-    // Direct the user to the article page
-    document.location.href = el.getAttribute("data-url");
-
-    // Article num
-    articleNum = el.getAttribute("num");
-    localStorage.setItem("articleNum", articleNum);
-  });
-
-  if (articlePage) {
-    console.log(articleNum);
-    const article = articleData[articleNum - 1];
-    console.log(article);
-    articlePage.innerHTML = `<div class="article-page__head">
+console.log(articleNum);
+const realArticle = articleData[articleNum - 1];
+console.log(article);
+articlePage.innerHTML = `<div class="article-page__head">
         <h1 class="article-page__heading">
-          ${article.title}
+          ${realArticle.title}
         </h1>
         <div class="article-page__details">
           <div>
-            <span class="article-page__author">-${article.author}</span>
-            <span class="article-page__date">${article.date}</span>
+            <span class="article-page__author">-${realArticle.author}</span>
+            <span class="article-page__date">${realArticle.date}</span>
           </div>
           <div class="article-page__share">
             <i class="article-page__icon"
@@ -225,14 +104,14 @@ article?.forEach((el) => {
       <article class="article-page__content">
         <div class="article-page__img">
           <img
-            src=${article.img}
-            alt=${article.title}
+            src=${realArticle.img}
+            alt=${realArticle.title}
             class="article-page__img-content"
           />
         </div>
         <div class="article-page__item">
           <div class="article-page__text">
-            ${article.content}
+            ${realArticle.content}
           </div>
           <aside class="aside">
             <h3 class="aside__heading">Want to add your own article?</h3>
@@ -245,5 +124,16 @@ article?.forEach((el) => {
           </aside>
         </div>
       </article>`;
-  }
+
+const showAdd = document.querySelector(".aside__link");
+const addForm = document.querySelector(".add");
+const closeAdd = document.querySelector(".close-add");
+
+showAdd.addEventListener("click", function () {
+  console.log("clicked!");
+  addForm.classList.remove("hidden");
+});
+
+closeAdd.addEventListener("click", function () {
+  addForm.classList.add("hidden");
 });

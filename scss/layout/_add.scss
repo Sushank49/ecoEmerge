@@ -1,16 +1,29 @@
 .add {
-  height: 100vh;
-  transition: all .3s;
+  height: 110vh;
+  transition: all 0.3s;
   width: 100%;
-  background-color: orangered;
- &__input {
-  height: 20rem;
- }
+  background-color: rgba($color-black, 0.9);
+  position: fixed;
+  visibility: visible;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  &__input {
+    height: 20rem;
+  }
 
+  &__input--1:placeholder-shown + &__label {
+    text-align: left;
+    transform: translate(-44rem, -4rem);
+  }
+
+  &__label {
+    transform: translateX(-44rem);
+  }
 }
 
 .hidden {
-  visibility: 'hidden';
+  visibility: "hidden";
   transform: translateX(-100%);
   opacity: 0;
 }

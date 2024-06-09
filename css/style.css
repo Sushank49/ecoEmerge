@@ -574,8 +574,9 @@ link:visited {
     font-size: 4.2rem;
     color: #fff;
     font-weight: 700;
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
-    scale: 1; }
+    text-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+    scale: 1;
+    z-index: 5; }
     .form__close:hover {
       cursor: pointer;
       color: #eee;
@@ -686,7 +687,9 @@ link:visited {
     font-weight: 600; }
   .article-page__date {
     padding: 0.5rem 0.5rem 1rem;
-    display: block; }
+    display: block;
+    font-weight: 500;
+    font-size: 1.2rem; }
   .article-page__share {
     height: 2rem;
     display: flex;
@@ -705,7 +708,8 @@ link:visited {
   .article-page__text {
     padding: 5rem 0 5rem 8rem;
     font-size: 1.6rem;
-    line-height: 1.9; }
+    line-height: 1.9;
+    width: 230%; }
   .article-page__img-content {
     width: 100%;
     height: 50rem;
@@ -747,15 +751,25 @@ link:visited {
     color: #fff; }
 
 .add {
-  height: 100vh;
-  transition: all .3s;
+  height: 110vh;
+  transition: all 0.3s;
   width: 100%;
-  background-color: orangered; }
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  visibility: visible;
+  opacity: 1;
+  top: 0;
+  left: 0; }
   .add__input {
     height: 20rem; }
+  .add__input--1:placeholder-shown + .add__label {
+    text-align: left;
+    transform: translate(-44rem, -4rem); }
+  .add__label {
+    transform: translateX(-44rem); }
 
 .hidden {
-  visibility: 'hidden';
+  visibility: "hidden";
   transform: translateX(-100%);
   opacity: 0; }
 
@@ -836,7 +850,7 @@ link:visited {
   .article__heading {
     font-size: 2.4rem;
     padding: 1rem 0;
-    line-height: 0.95;
+    line-height: 1.1;
     color: #333; }
   .article__author {
     font-size: 1.2rem;

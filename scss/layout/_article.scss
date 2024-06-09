@@ -30,6 +30,8 @@
   &__date {
     padding: 0.5rem 0.5rem 1rem;
     display: block;
+    font-weight: 500;
+    font-size: 1.2rem;
   }
   &__share {
     height: 2rem;
@@ -57,6 +59,7 @@
     padding: 5rem 0 5rem 8rem;
     font-size: 1.6rem;
     line-height: 1.9;
+    width: 230%;
   }
 
   &__img-content {
