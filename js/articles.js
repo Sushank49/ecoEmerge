@@ -50,10 +50,11 @@ const img = document.querySelector("#image");
 const author = document.querySelector("#author");
 const articleContainer = document.querySelector(".article-grid");
 const articlePage = document.querySelector(".article-page");
+let addForm = document.querySelector(".add");
 
 // Read the form filled out by the user and add it to the array
 let added = false;
-submit?.addEventListener("click", function (e) {
+submit?.addEventListener("submit", function (e) {
   const today = new Date();
   const options = { year: "numeric", month: "long", day: "numeric" };
   const formattedDate = today.toLocaleDateString("en-US", options);
@@ -69,12 +70,12 @@ submit?.addEventListener("click", function (e) {
   };
   articleData = [...articleData, newArticle];
   localStorage.setItem("articles", JSON.stringify(articleData));
+  addForm.classList.add("hidden");
 });
 
 if (added) {
   let storedData = localStorage.getItem("articles");
   articleData = JSON.parse(storedData);
-  console.log(articleData);
   added = false;
 }
 

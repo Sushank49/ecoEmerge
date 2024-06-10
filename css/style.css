@@ -50,6 +50,10 @@
     opacity: 1;
     transform: scale(1); } }
 
+@keyframes scroll-watcher {
+  to {
+    scale: 1 1; } }
+
 .hideY {
   transform: translateY(30%);
   opacity: 0.2; }
@@ -718,6 +722,21 @@ link:visited {
     display: flex;
     align-items: top;
     gap: 10rem; }
+
+.article-page-body {
+  position: relative; }
+
+.scroll-watcher {
+  top: 0;
+  position: fixed;
+  height: .7rem;
+  background-color: #28b485;
+  width: 100%;
+  z-index: 10000;
+  scale: 0 1;
+  transform-origin: left;
+  animation: scroll-watcher linear;
+  animation-timeline: scroll(y); }
 
 .aside {
   margin-top: 6rem;

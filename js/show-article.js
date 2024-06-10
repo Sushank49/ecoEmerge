@@ -1,13 +1,12 @@
 "use strict";
 storedData = localStorage.getItem("articles");
 articleNum = localStorage.getItem("articleNum");
-articleData = JSON.parse(storedData);
+if (storedData !== null) {
+  articleData = JSON.parse(storedData);
+}
 articleNum = JSON.parse(articleNum);
-console.log(articleNum);
 
-console.log(articleNum);
 const realArticle = articleData[articleNum - 1];
-console.log(article);
 articlePage.innerHTML = `<div class="article-page__head">
         <h1 class="article-page__heading">
           ${realArticle.title}
@@ -126,14 +125,14 @@ articlePage.innerHTML = `<div class="article-page__head">
       </article>`;
 
 const showAdd = document.querySelector(".aside__link");
-const addForm = document.querySelector(".add");
+ addForm = document.querySelector(".add");
 const closeAdd = document.querySelector(".close-add");
 
 showAdd.addEventListener("click", function () {
-  console.log("clicked!");
   addForm.classList.remove("hidden");
-});
-
-closeAdd.addEventListener("click", function () {
+  });
+  
+  closeAdd.addEventListener("click", function () {
+  console.log("clicked!");
   addForm.classList.add("hidden");
 });
