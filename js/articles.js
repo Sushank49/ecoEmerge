@@ -34,6 +34,78 @@ In conclusion, reducing your carbon footprint is not only beneficial for the pla
     author: "John Antwerp",
     img: "../images/articles/article1.jpg",
   },
+  {
+    id: 2,
+    title: "7 Simple Tips for a Zero-Waste Lifestyle 🌍",
+    content: `
+Adopting a zero-waste lifestyle might seem daunting, but with small, manageable steps, anyone can make significant progress. Here are seven practical tips to help you reduce waste and live more sustainably.
+
+Start by swapping single-use items for reusable alternatives. Replace plastic bags with cloth tote bags, disposable water bottles with stainless steel or glass bottles, and single-use coffee cups with reusable ones. These small changes can greatly reduce the amount of waste you produce daily.
+
+Another effective strategy is to buy in bulk. Purchasing items like grains, nuts, and spices in bulk not only saves money but also reduces packaging waste. Bring your own containers to the store to avoid using plastic bags and packaging.
+
+Composting is an excellent way to reduce food waste and create nutrient-rich soil for your garden. Instead of throwing away food scraps, start a compost pile or use a compost bin. This not only reduces the amount of waste sent to landfills but also provides natural fertilizer for plants.
+
+Be mindful of your purchases and avoid buying items with excessive packaging. Opt for products that use minimal or eco-friendly packaging. Additionally, consider buying second-hand items or repairing broken items instead of purchasing new ones.
+
+Reducing paper waste is also important. Switch to digital billing and subscriptions to cut down on paper usage. Use both sides of paper when printing, and recycle any paper that you do use.
+
+DIY cleaning products are another way to reduce waste and avoid harmful chemicals. Simple ingredients like vinegar, baking soda, and essential oils can be used to create effective, eco-friendly cleaning solutions. This not only reduces plastic waste from packaging but also ensures a healthier home environment.
+
+Finally, spreading awareness about the benefits of a zero-waste lifestyle can inspire others to make changes. Share your experiences, tips, and successes with friends and family. Encouraging a collective effort amplifies the positive impact on the environment.
+
+In conclusion, transitioning to a zero-waste lifestyle is achievable with small, deliberate changes. By incorporating these tips into your daily routine, you can reduce your waste, save money, and contribute to a healthier planet. Every effort counts, and together we can make a significant difference.
+  `,
+    date: "June 15, 2024",
+    author: "Jane Eco",
+    img: "https://plus.unsplash.com/premium_photo-1664283229534-194c0cb5b7da?q=80&w=1380&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    id: 3,
+    title: "The Power of Renewable Energy: Harnessing Nature's Potential ⚡️",
+    content: `
+Renewable energy sources offer a sustainable and environmentally friendly alternative to fossil fuels. From solar and wind power to hydroelectric and geothermal energy, harnessing nature's potential has become increasingly important in the fight against climate change.
+
+Solar energy is one of the most abundant and accessible renewable energy sources available. Solar panels, typically installed on rooftops or in solar farms, convert sunlight into electricity. This clean and renewable energy source reduces reliance on fossil fuels and produces no greenhouse gas emissions.
+
+Wind power is another renewable energy source with significant potential. Wind turbines capture the kinetic energy of the wind and convert it into electricity. Wind farms, located on land or offshore, can generate large amounts of clean energy, making wind power an essential component of the renewable energy transition.
+
+Hydroelectric power, generated from flowing water, has been used for centuries to produce electricity. Large dams and reservoirs are built to capture the energy of moving water and convert it into electrical energy. Hydroelectric power is reliable, cost-effective, and emits minimal greenhouse gases.
+
+Geothermal energy harnesses the heat stored beneath the Earth's surface to generate electricity. Geothermal power plants use steam or hot water from underground reservoirs to drive turbines and produce electricity. This renewable energy source is available 24/7 and has the potential to provide a significant portion of our energy needs.
+
+In addition to these renewable energy sources, there are emerging technologies like tidal and wave power that show promise in harnessing the energy of the ocean. As technology advances and investment in renewable energy grows, the transition to a clean energy future becomes increasingly feasible.
+
+Investing in renewable energy not only reduces our carbon footprint but also creates jobs, stimulates economic growth, and enhances energy security. By transitioning to renewable energy sources, we can mitigate the impacts of climate change and build a more sustainable and resilient future for generations to come.
+  `,
+    date: "August 5, 2024",
+    author: "David Green",
+    img: "https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    id: 4,
+    title: "The Role of Technology in Sustainable Agriculture 🌾",
+    content: `
+Sustainable agriculture is essential for feeding a growing global population while minimizing environmental impact. Technology plays a crucial role in advancing sustainable farming practices, increasing efficiency, and reducing resource use.
+
+Precision agriculture uses technology like GPS, sensors, and data analytics to optimize farming operations. By collecting data on soil moisture, nutrient levels, and crop health, farmers can make informed decisions about planting, irrigation, and fertilization. This targeted approach minimizes inputs, reduces waste, and improves yields.
+
+Vertical farming is another innovative solution that maximizes space and resources. In vertical farms, crops are grown in stacked layers under controlled conditions, using artificial lighting and hydroponic or aeroponic systems. This method requires less water and land than traditional farming and can be implemented in urban areas, reducing transportation emissions and food miles.
+
+Biotechnology plays a vital role in developing drought-resistant, pest-resistant, and high-yielding crop varieties. Genetically modified organisms (GMOs) and gene editing techniques allow scientists to enhance crop traits and improve resilience to climate change. These advancements help farmers adapt to changing environmental conditions and increase agricultural productivity.
+
+Agroforestry integrates trees and shrubs into agricultural landscapes, providing multiple benefits such as improved soil health, biodiversity conservation, and carbon sequestration. By combining crops with trees, farmers can diversify income streams, reduce erosion, and create habitats for beneficial insects and wildlife.
+
+Renewable energy technologies like solar panels and wind turbines can also be integrated into farming operations. Solar-powered irrigation systems, wind-powered water pumps, and biogas digesters are examples of renewable energy solutions that reduce reliance on fossil fuels and lower operating costs for farmers.
+
+In addition to these technological advancements, farmer education and knowledge sharing are essential for promoting sustainable agriculture practices. Training programs, workshops, and farmer networks facilitate the adoption of innovative techniques and promote collaboration among agricultural stakeholders.
+
+By harnessing the power of technology, sustainable agriculture can address the challenges of food security, climate change, and environmental degradation. By adopting innovative practices and embracing technological solutions, farmers can build resilient, productive, and environmentally sustainable food systems.
+  `,
+    date: "September 20, 2024",
+    author: "Emily Fields",
+    img: "https://images.unsplash.com/photo-1535379453347-1ffd615e2e08?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
 ];
 
 let storedData = localStorage.getItem("articles");
@@ -44,7 +116,7 @@ if (storedData !== null) {
 const addBtn = document.querySelector(".aside__link");
 const add = document.querySelector(".add");
 const title = document.querySelector("#title");
-const submit = document.querySelector(".submit");
+const submit = document.querySelector(".add__form");
 const content = document.querySelector("#article");
 const img = document.querySelector("#image");
 const author = document.querySelector("#author");
@@ -84,7 +156,8 @@ if (added) {
 // })
 
 // Display the correct number of articles in the page
-
+// Show the recently added article the first
+articleData = articleData.reverse();
 articleData.forEach((article) => {
   const articleElement = document.createElement("article");
   articleElement.className = "article";
@@ -242,9 +315,21 @@ article?.forEach((el) => {
               <li class="aside__item">Fill out the form. 📧</li>
               <li class="aside__item">Post! ✅</li>
             </ol>
-            <a href="#" class="aside__link">Add Now!</a>
+            <a href="#" class="aside__link" id='aside__link'>Add Now!</a>
           </aside>
         </div>
       </article>`;
   }
+});
+let showAdd = document.querySelector(".aside__link");
+let closeAdd = document.querySelector(".close-add");
+
+// Show the add article form
+showAdd.addEventListener("click", function () {
+  addForm.classList.remove("hidden");
+});
+
+closeAdd.addEventListener("click", function () {
+  console.log("clicked!");
+  addForm.classList.add("hidden");
 });

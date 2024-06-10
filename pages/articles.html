@@ -126,7 +126,79 @@
       <div class="article-grid">
         <span class="trending">Trending Articles</span>
       </div>
+      <aside class="aside" style="text-align: center">
+        <h3 class="aside__heading">Want to add your own article?</h3>
+        <ol class="aside__list" style="display: inline-block">
+          <li class="aside__item">Gather Content. 💻</li>
+          <li class="aside__item">Fill out the form. 📧</li>
+          <li class="aside__item">Post! ✅</li>
+        </ol>
+        <br />
+        <a href="#" class="aside__link">Add Now!</a>
+      </aside>
     </main>
+    <div class="add hidden">
+      <form class="add__form">
+        <span class="material-symbols-outlined form__close close-add">
+          close
+        </span>
+        <h2 class="heading-secondary">Add Your Article Now!</h2>
+        <div class="contact__form" style="margin-top: -2rem">
+          <input
+            type="text"
+            name="title"
+            id="title"
+            placeholder="Title"
+            class="form__input contact__input add__input--1"
+            required
+          />
+          <label class="form__label add__label" for="name">Title</label>
+          <br />
+          <input
+            type="text`"
+            name="image"
+            id="image"
+            placeholder="Link of the image"
+            class="form__input contact__input add__input--1"
+            required
+          />
+          <label class="form__label add__label" for="image"
+            >Link of the image</label
+          >
+          <br />
+          <input
+            type="text`"
+            name="author"
+            id="author"
+            placeholder="Your name"
+            class="form__input contact__input add__input--1"
+            required
+          />
+          <label class="form__label add__label" for="image">Your name</label>
+          <br />
+          <textarea
+            minlength="150"
+            cols="10"
+            name="article"
+            id="article"
+            placeholder="Content of the article"
+            class="form__input contact__input add__input--1 add__input"
+            required
+          ></textarea>
+          <label class="form__label add__label" for="article"
+            >Content of the article</label
+          >
+          <br />
+          <button
+            type="submit"
+            class="subscribe__btn submit"
+            style="margin-top: 0"
+          >
+            Submit Now &rarr;
+          </button>
+        </div>
+      </form>
+    </div>
     <div class="subscribe">
       <form action="#" class="form">
         <h4 class="form__heading">Join Now!</h4>
