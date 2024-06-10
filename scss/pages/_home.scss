@@ -33,6 +33,19 @@
   padding-bottom: 10rem;
 }
 
+.section-about {
+  height: 100vh;
+  display: flex;
+  padding: 5rem 10rem;
+  gap: 6rem;
+  background-color: $color-grey-light-2;
+  // margin-bottom: 3rem;
+}
+
+.section-team {
+  padding-bottom: 7.2rem;
+}
+
 .contact-main {
   @include mainPage("../images/contact.jpg", 0.7);
 }

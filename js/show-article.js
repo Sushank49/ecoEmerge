@@ -127,7 +127,6 @@ articlePage.innerHTML = `<div class="article-page__head">
 
 showAdd = document.querySelector(".aside__link");
 closeAdd = document.querySelector(".close-add");
-console.log(showAdd, closeAdd);
 
 // Show the add article form
 showAdd.addEventListener("click", function () {

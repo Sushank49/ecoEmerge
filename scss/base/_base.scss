@@ -14,3 +14,7 @@ body {
   overflow-x: hidden !important;
   position: relative;
 }
+::selection {
+  background-color: $color-primary-dark;
+  color: $color-grey-light-1;
+}
