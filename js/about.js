@@ -51,7 +51,7 @@ window.onscroll = function () {
 function startStickyNav() {
   if (window.scrollY >= stick) {
     nav.classList.add("sticky");
-    document.body.style.marginTop = "-14rem";
+    document.body.style.marginTop = "-20rem";
   } else {
     nav.classList.remove("sticky");
     document.body.style.marginTop = "0";

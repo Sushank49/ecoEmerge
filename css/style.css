@@ -227,6 +227,9 @@ link:visited {
   padding: 0.5rem 1rem;
   margin-top: 1.5rem; }
 
+.margin-top-huge {
+  margin-top: 20rem; }
+
 .margin-top-large {
   margin-top: 14rem; }
 
@@ -547,6 +550,8 @@ link:visited {
   width: 100%;
   background-color: #eee;
   z-index: 1000; }
+  .sticky .sticky__color {
+    color: #28b485; }
 
 .subscribe {
   position: fixed;
@@ -793,7 +798,8 @@ link:visited {
   visibility: visible;
   opacity: 1;
   top: 0;
-  left: 0; }
+  left: 0;
+  z-index: 100000; }
   .add__input {
     height: 20rem; }
   .add__input--1:placeholder-shown + .add__label {

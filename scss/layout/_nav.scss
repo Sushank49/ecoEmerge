@@ -54,6 +54,9 @@
   top: 0;
   width: 100%;
   background-color: $color-grey-light-2;
-
   z-index: 1000;
+  
+  & &__color{
+    color: $color-primary-dark;
+  }
 }
