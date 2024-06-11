@@ -55,6 +55,7 @@ let addForm = document.querySelector(".add");
 // Read the form filled out by the user and add it to the array
 let added = false;
 submit?.addEventListener("submit", function (e) {
+  console.log("Clicked")
   const today = new Date();
   const options = { year: "numeric", month: "long", day: "numeric" };
   const formattedDate = today.toLocaleDateString("en-US", options);
