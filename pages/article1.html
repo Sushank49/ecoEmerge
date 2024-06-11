@@ -80,7 +80,17 @@
     <script defer src="../js/show-article.js"></script>
   </head>
   <body class="article-page-body">
-    <nav class="nav">
+    <nav
+      class="nav"
+      style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        background-color: #eee;
+        z-index: 1000;
+      "
+    >
       <ul class="nav__child nav__child--1">
         <li class="nav__child__link">
           <a href="../index.html" class="nav__logo" Emerge
@@ -134,7 +144,7 @@
       </form>
     </div>
     <div class="add hidden">
-      <div class="add__form">
+      <form class="add__form">
         <span class="material-symbols-outlined form__close close-add">
           close
         </span>
@@ -193,7 +203,7 @@
             Submit Now &rarr;
           </button>
         </div>
-      </div>
+      </form>
     </div>
     <footer class="footer">
       <div class="footer__logo-box">

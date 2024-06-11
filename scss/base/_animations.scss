@@ -53,20 +53,6 @@
   }
 }
 
-@keyframes upNdown {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-1rem);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
 @keyframes fade {
   from {
     opacity: 0;
@@ -82,12 +68,12 @@
   to {
     scale: 1 1;
   }
-  
 }
 
 .hideY {
   transform: translateY(30%);
-  opacity: 0.2;
+  opacity: 0;
+  scale: 0.7;
 }
 
 .hideX {
@@ -102,9 +88,10 @@
   transition: all 0.5s !important;
 }
 
-.showY .card-component {
+.showY {
   transform: translateY(0%);
   opacity: 1;
+  scale: 1;
 }
 
 .showX:nth-child(1) {
@@ -123,11 +110,14 @@
 }
 
 .hideX1 {
-  transform: translateX(-80%);
-  opacity: 0;
+  &:nth-child(1) {
+    transform: translateX(-80%) !important;
+    opacity: 0;
+  }
 
   &:nth-child(2) {
-    transform: translateX(80%);
+    opacity: 0;
+    transform: translateX(80%) !important;
   }
 }
 

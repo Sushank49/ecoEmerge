@@ -2,9 +2,10 @@
 storedData = localStorage.getItem("articles");
 articleNum = localStorage.getItem("articleNum");
 if (storedData !== null) {
-  articleData = JSON.parse(storedData);
+  articleData = JSON.parse(storedData).reverse();
 }
 articleNum = JSON.parse(articleNum);
+articleData = articleData.reverse();
 
 const realArticle = articleData[articleNum - 1];
 articlePage.innerHTML = `<div class="article-page__head">
@@ -124,15 +125,15 @@ articlePage.innerHTML = `<div class="article-page__head">
         </div>
       </article>`;
 
-const showAdd = document.querySelector(".aside__link");
- addForm = document.querySelector(".add");
-const closeAdd = document.querySelector(".close-add");
+showAdd = document.querySelector(".aside__link");
+closeAdd = document.querySelector(".close-add");
 
+// Show the add article form
 showAdd.addEventListener("click", function () {
   addForm.classList.remove("hidden");
-  });
-  
-  closeAdd.addEventListener("click", function () {
+});
+
+closeAdd.addEventListener("click", function () {
   console.log("clicked!");
   addForm.classList.add("hidden");
 });
