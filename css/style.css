@@ -838,7 +838,7 @@ link:visited {
   padding-bottom: 4rem; }
 
 .header-about {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/hero-alt.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/hero-alt.webp");
   height: 100vh;
   background-size: cover;
   background-position: top;
