@@ -846,7 +846,7 @@ link:visited {
   background-attachment: fixed; }
 
 .header-articles {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/articles/hero.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/articles/hero.webp");
   height: 100vh;
   background-size: cover;
   background-position: top;
